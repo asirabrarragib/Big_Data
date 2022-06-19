@@ -1,30 +1,24 @@
-# COSC 5340 Data Science and Big Data Analysis
+##Dataset Information:
 
-**Dataset**: https://www.kaggle.com/datasets/azminetoushikwasi/ucl-202122-uefa-champions-league
+1.	Load the Dataset: Ablone Data Set Link: https://archive.ics.uci.edu/ml/datasets/Abalone
+2.	Number of Instances: 4177
+3.	Number of Attributes: 8
 
-**Implementation**
-1. Import the dataset
-2. Check data description
-3. Remove ‘player_name’, ‘club’, ‘minutes_played’
-4. Check Missing value
-5. Transform the ‘position’ from object type to int type
-6. Check missing value
-7. Remove null values
-8. Calculate similarities for nominal, ordinal and interval attributes.
-9. Combining the matrix
-10. Generate a csv file Similarity Matrix.csv
-
-**Similarity for the attribute (NOMINAL ATTRIBUTE)**
-
-Using s = 1 if p=q; s=0 if p!=q
-
-**Similarity for the attribute  (RATIO ATTRIBUTE)**
-
-Using d = |p-q|; s = 1/(1+d)
-
-**Similarity for the attribute '' (ORDINAL ATTRIBUTE)**
-
-Using d = |p-q| / (n-1); s = 1 - d
-
-**Check for any number of missing value**
-data.isnull().sum()
+##Implementation Steps:
+1.	Import numpy, pandas, seaborn, matplotlib.pyplot
+2.	Load the datset.
+3.	Check the information of the data to see whether is there any data type other than numerical data.
+4.	Convert the “Sex” // M=2, F=0, and I =1
+4.	We took 2000 instances for this assignment -2
+5.	Check the information to see if all the attributes are numerical
+6.	Use .describe function to see the mean, count, std and other measurement for the attributes
+7.	Now use another function to print these measurements to “outputfile-abalone.txt” file.
+8.	Now we will implement visualization steps
+9.	We will count the number of each attributes by ploting histogram.
+10.	We will use the graph plot to see the relation between height and diameter for sex attribute.
+11.	We will use the graph plot to see the relation between height and whole weight for sex attribute.
+12.	We will use the graph plot to see the relation between length and height for sex attribute.
+13.	We will use the graph plot to see the relation between length and height for different ring attribute.
+14.	We will generate the heatmap
+15.	We will generate the box plot.
+16.	We will generate pairplot.
